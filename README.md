@@ -7,7 +7,7 @@ A **zero-dependency** Java implementation of [RFC 9535 (JSONPath: Query Expressi
 ## Usage
 
 ```java
-import com.lambdatest.jsonpath.JsonPath;
+import io.github.lambdatest.jsonpath.JsonPath;
 
 JsonPath path = JsonPath.parse("$.result[?(@.timeSlots && @.gender=='Male')].employeeId");
 
@@ -38,7 +38,7 @@ singular-query restrictions — all enforced at parse time).
 
 ```
 javac -d target/classes $(find src -name "*.java")
-java -cp target/classes com.lambdatest.jsonpath.cts.CtsRunner /path/to/cts.json
+java -cp target/classes io.github.lambdatest.jsonpath.cts.CtsRunner /path/to/cts.json
 ```
 
 The CTS runner (and its bundled minimal JSON reader) live under `src/test` and

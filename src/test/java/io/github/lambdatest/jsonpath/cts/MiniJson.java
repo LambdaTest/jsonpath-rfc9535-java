@@ -1,4 +1,4 @@
-package com.lambdatest.jsonpath.cts;
+package io.github.lambdatest.jsonpath.cts;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

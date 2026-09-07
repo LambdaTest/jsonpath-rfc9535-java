@@ -1,4 +1,4 @@
-package com.lambdatest.jsonpath;
+package io.github.lambdatest.jsonpath;
 
 import java.util.List;
 

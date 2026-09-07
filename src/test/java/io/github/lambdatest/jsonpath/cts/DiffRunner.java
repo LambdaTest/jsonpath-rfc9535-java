@@ -1,6 +1,6 @@
-package com.lambdatest.jsonpath.cts;
+package io.github.lambdatest.jsonpath.cts;
 
-import com.lambdatest.jsonpath.JsonPath;
+import io.github.lambdatest.jsonpath.JsonPath;
 
 import java.io.IOException;
 import java.nio.file.Files;
