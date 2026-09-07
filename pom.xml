@@ -25,6 +25,22 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <build>
+    <plugins>
+      <!-- Pinned: JitPack's wrapper-less Maven resolves an ancient compiler
+           plugin that ignores maven.compiler.release and targets Java 5
+           ("Target option 5 is no longer supported"). -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <!-- Intentionally no runtime dependencies. Test harness is dependency-free too
        (bundles its own minimal JSON reader). -->
 </project>
